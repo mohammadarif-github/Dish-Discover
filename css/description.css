@@ -18,7 +18,9 @@ body {
 }
 
 #recipeName {
-    color: #333;
+    text-align: center;
+    color: gray;
+    font-size: 40px;
 }
 
 #ingredientList {

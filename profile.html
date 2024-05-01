@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <style>
+        <!-- #header {
+        background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat;
+        }
+        -->
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="navbar-inner-container d-flex align-items-center m-auto p-2">
+                <a class="navbar-brand" href="index.html">Dish Discovery</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipe.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Search form -->
+                    <form class="form-inline my-2 my-lg-0 mr-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <!-- Login/Signup buttons -->
+                    <ul class="navbar-nav" id="auth-buttons">
+                        <!-- Dynamic Butttons  -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Banner -->
+    <div class="banner-container">
+        <div id="banner" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="banner-img">
+                    <img src="img/b1.jpg" class="d-block w-100" alt="Food 1">
+                </div>
+                <div class="carousel-item" id="banner-img">
+                    <img src="img/b2.jpg" class="d-block w-100" alt="Food 2">
+                </div>
+                <div class="carousel-item" id="banner-img">
+                    <img src="img/b3.jpg" class="d-block w-100" alt="Food 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Featured Recipes -->
+
+    <!-- <nav class="bg-dark navbar-dark">
+    <div class="container">
+      <a href="" class="navbar-brand"><i class="fas fa-tree mr-2"></i>Forest</a>
+    </div>
+    </nav>
+     <section id="header" class="jumbotron text-center">
+       <h1 class="display-3">FOREST</h1>
+       <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+       <a href="" class="btn btn-primary">Click</a>
+       <a href="" class="btn btn-secondary">Click</a>
+     </section> -->
+
+
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                            alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunset</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
+                                similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
+                                dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nec neque at feugiat.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/example" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/example" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/example" target="_blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/example" target="_blank"><i
+                                    class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <a class="text-decoration-none">Chittagong,Bangladesh</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:01648232795">01648232795</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none"
+                                href="mailto:dish.discovery@gmail.com">home.recipe@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light">
+                        Copyright &copy; 2024 Dish Discovery
+                        | Designed by <a rel="sponsored"
+                            href="https://docs.google.com/document/d/1QqIwXzi6gH0vxKVG70SfQ0DoJOVkH82z5GObbhan3ds/edit?usp=sharing"
+                            target="_blank">Md. Ariful</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- end footer -->
+
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main_app.js"></script>
+    <script src="./auth.js"></script>
+</body>
+
+</html>

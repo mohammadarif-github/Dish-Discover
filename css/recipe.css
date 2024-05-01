@@ -57,9 +57,6 @@ body {
     border-color: #333; /* Hover border color */
 }
 
-.rc-container {
-    padding-top: 50px;
-}
 
 .recipe-banner {
     padding-top: 60px;
@@ -99,31 +96,28 @@ body {
 .banner-text h2 {
     margin-bottom: 10px;
 }
-.line_btn {
-    display: inline-block;
-    font-size: 13px;
-    color: #000000;
-    border: 1px solid #ffc000;
-    text-transform: capitalize;
-    padding: 13px 34px;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-  }
-
-.recipe-cards{
-    padding-bottom: 20px;
-}
-.recepie_thumb img {
-    height: auto; /* Allow the height to adjust automatically */
-     /* Make sure the image fills the container width */
-    max-height: 200px; /* Set the maximum height */
-/* Adjust the border radius as needed */
-}
 
 #ftr{
     padding: 30px;
     margin-top: auto;
+}
+
+
+.card-img-top {
+    max-width: 350px;
+    height: 400px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#gallery{
+    padding-top: 50px;
 }
