@@ -57,7 +57,7 @@ body {
     border-color: #333; /* Hover border color */
 }
 
-.container {
+.rc-container {
     padding-top: 50px;
 }
 
@@ -124,5 +124,6 @@ body {
 }
 
 #ftr{
-    margin-top: 50px;
+    padding: 30px;
+    margin-top: auto;
 }

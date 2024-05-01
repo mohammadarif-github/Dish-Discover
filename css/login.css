@@ -3,10 +3,10 @@ body {
 }
 .login-div{
     align-items: center;
-    margin: 50px;
+    margin-top:20px;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
 }
 .login-container {
     margin-top: 80px;

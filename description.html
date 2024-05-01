@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/recipe.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5vIOI6aSjOt4Ck6BfGU5tFZlFLFmxve8ePvJy" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -53,36 +52,42 @@
         </div>
       </nav>
     </div>
-    <!-- Contact form -->
-        <div class="row">
+
+    <br>
+
+    <!-- description starts from here -->
+    <div class="dsc-container">
+        <div class="row mt-5">
             <div class="col-md-6">
-                <div class="contact-image">
-                    <img src="img/contact.jpg" alt="Contact Image">
-                </div>
+                <img id="recipeImage" class="img-fluid" alt="Recipe Image">
             </div>
             <div class="col-md-6">
-                <div class="contact-div">
-                    <div class="contact-container">
-                        <h2>Contact Us</h2>
-                        <form class="contact-form">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
+                <h2 id="recipeName"></h2>
+                <h4>Ingredients:</h4>
+                <ul id="ingredientList"></ul>
+                <h4>Recipe:</h4>
+                <p id="recipeDescription"></p>
+                <h4>Feedback:</h4>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="feedbackTextarea">Your Feedback</label>
+                        <textarea class="form-control" id="feedbackTextarea" rows="3"></textarea>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="ratingSelect">Rating</label>
+                        <select class="form-control" id="ratingSelect">
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
             </div>
         </div>
+    </div>
 
     <!-- footer -->
     <footer class="footer bg-dark text-white" id="ftr">
@@ -146,11 +151,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main_app.js"></script>
     <script src="./auth.js"></script>
 </body>
 
 </html>
-
-
-
-

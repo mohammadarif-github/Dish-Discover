@@ -3,11 +3,11 @@ body {
 }
 
 .register-div {
-    margin-top:75px;
+    margin-top:40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     margin-bottom:10px;
 }
 
