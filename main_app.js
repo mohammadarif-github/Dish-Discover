@@ -29,7 +29,7 @@ const display_recipes = (recipes) => {
         <img src="${recipe.image}"alt="" class="card-img-top">
         <div class="card-body">
         <h5 class="card-title">${recipe.name}</h5>
-        <p class="card-text">${recipe.description.slice(0, 100)}</p>
+        <p class="card-text">${recipe.description.slice(0,220)}</p>
         <a href="description.html?id=${recipe.id}" class="btn btn-outline-success btn-sm">Full Recipe</a>
         <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
     </div> `;
