@@ -1,0 +1,147 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: transparent;
+    /* Set the background color to transparent */
+    backdrop-filter: blur(10px);
+    /* Add a blur effect for better readability */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 24px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Set text color to white or any other color for better visibility */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    /* Text color */
+    font-size: 16px;
+    /* Increase font size */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    transition: color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Change text color on hover */
+}
+
+.navbar-toggler-icon {
+    color: white;
+    /* Navbar toggler icon color */
+}
+
+.navbar-toggler-icon:hover {
+    color: #ffc107;
+    /* Change color of navbar toggler icon on hover */
+}
+
+.btn-search {
+    color: black;
+    /* Text color */
+    background-color: #ffc107;
+    /* Background color */
+    font-size: 16px;
+    border-color: #ffc107;
+    /* Border color */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+/* Custom search button hover style */
+.btn-search:hover {
+    color: white;
+    /* Hover text color */
+    background-color: #333;
+    /* Hover background color */
+    border-color: #333;
+    /* Hover border color */
+}
+
+
+.recipe-banner {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    position: relative;
+    height: 300px;
+    /* Adjusted height to match the image height */
+}
+
+.banner-image {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* Ensure the text doesn't overflow */
+    border-radius: 50px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50px;
+    /* Matched border-radius with the parent */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    /* text-decoration: dotted; */
+    z-index: 2;
+    /* Ensuring the text appears above the image */
+}
+
+.banner-text h2 {
+    margin-bottom: 10px;
+}
+
+#ftr {
+    padding: 30px;
+    margin-top: auto;
+}
+
+
+.card-img-top {
+    max-width: 350px;
+    height: 400px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#gallery {
+    padding-top: 50px;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-icon {
+    font-size: 30px;
+    color: #007bff;
+    padding-left: 10px;
+    /* Change the color as desired */
+}
