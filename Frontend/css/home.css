@@ -1,0 +1,98 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #fff;
+    padding: 80px 30px;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    height: 300px;
+    /* Adjust as needed */
+    object-fit: cover;
+}
+
+#banner-img img {
+    height: 800px;
+}
+
+
+
+.review-card {
+    width: 250px;
+    height: 400px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-toggler-icon {
+    color: black;
+    /* Change toggle icon color */
+}
+
+.navbar-toggler {
+    background-color: gray;
+    /* Change toggle button background color */
+    border-color: white;
+    /* Remove border color */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    /* Remove focus box shadow */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    color: #ffc107;
+    /* Change toggle icon color on hover */
+}
+
+
+.welcome-container {
+    margin-top: 30px;
+}
+
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-icon {
+    padding-left: 10px;
+    font-size: 30px;
+    color: #007bff;
+    /* Change the color as desired */
+}
