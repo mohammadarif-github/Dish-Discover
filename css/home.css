@@ -23,49 +23,76 @@ body {
     height: 800px;
 }
 
+
+
+.review-card {
+    width: 250px;
+    height: 400px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
 .navbar {
     background-color: transparent;
-    /* Set the background color to transparent */
     backdrop-filter: blur(10px);
-    /* Add a blur effect for better readability */
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
     color: white;
-    font-size:24px;
+    font-size: 24px;
     font-weight: bold;
-    /* Set text color to white or any other color for better visibility */
 }
-
 
 .navbar-nav .nav-link {
     color: white;
-    /* Text color */
     font-size: 16px;
-    /* Increase font size */
-
     text-transform: uppercase;
-    /* Convert text to uppercase */
     transition: color 0.3s;
-    /* Add transition for smooth color change */
 }
 
 .navbar-nav .nav-link:hover {
     color: #ffc107;
-    /* Change text color on hover */
 }
 
 .navbar-toggler-icon {
-    color: white;
-    /* Navbar toggler icon color */
+    color: black;
+    /* Change toggle icon color */
 }
 
-.navbar-toggler-icon:hover {
-    color: #ffc107;
-    /* Change color of navbar toggler icon on hover */
+.navbar-toggler {
+    background-color: gray;
+    /* Change toggle button background color */
+    border-color: white;
+    /* Remove border color */
 }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    /* Remove focus box shadow */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    color: #ffc107;
+    /* Change toggle icon color on hover */
+}
+
 
 .welcome-container {
     margin-top: 30px;
+}
+
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-icon {
+    padding-left: 10px;
+    font-size: 30px;
+    color: #007bff;
+    /* Change the color as desired */
 }

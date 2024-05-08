@@ -8,9 +8,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/home.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -39,8 +41,8 @@
             </li>
           </ul>
           <!-- Search form -->
-          <form class="form-inline my-2 my-lg-0 mr-3">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="form-inline my-2 my-lg-0 mr-3" id="searchForm">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
           </form>
           <!-- Login/Signup buttons -->
@@ -85,8 +87,8 @@
           <p class="lead">Share your favorite recipes with the world.</p>
           <hr class="my-3">
           <p>Get started by browsing through delicious recipes or creating your own!</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Browse Recipes</a>
-          <a class="btn btn-secondary btn-lg" href="#" role="button">Create Recipe</a>
+          <a class="btn btn-primary btn-lg" href="recipe.html" role="button">Browse Recipes</a>
+          <a class="btn btn-secondary btn-lg" href="create_recipe.html" role="button">Create Recipe</a>
         </div>
       </div>
     </div>
@@ -100,38 +102,72 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img src="img/recpie_1.png" class="card-img-top" alt="Recipe 1">
+            <img src="img/cashewnut_salad.jpeg" class="card-img-top" alt="Recipe 1">
             <div class="card-body">
-              <h5 class="card-title">Delicious Pasta</h5>
-              <p class="card-text">A mouthwatering pasta dish with creamy sauce.</p>
-              <a href="#" class="btn btn-primary">View Recipe</a>
+              <h5 class="card-title">Cashewnut Salad</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in tempora vero sequi
+                natus, non debitis reiciendis eum placeat. Repellat at laborum consectetur repellendus quisquam
+                doloremque, velit, minus asperiores autem veniam consequatur maiores natus, sint accusamus quam
+                incidunt. Unde, esse..</p>
+              <a href="description.html?id=3" class="btn btn-primary">View Recipe</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img src="img/recpie_2.png" class="card-img-top" alt="Recipe 2">
+            <img src="img/chicken_curry.jpg" class="card-img-top" alt="Recipe 2">
             <div class="card-body">
-              <h5 class="card-title">Spicy Tacos</h5>
-              <p class="card-text">Tacos filled with spicy ingredients for a flavorful experience.</p>
-              <a href="#" class="btn btn-primary">View Recipe</a>
+              <h5 class="card-title">Chicken Curry</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, commodi.</p>
+              <a href="description.html?id=1" class="btn btn-primary">View Recipe</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img src="img/recpie_3.png" class="card-img-top" alt="Recipe 3">
+            <img src="img/egg_manchurian.jpeg" class="card-img-top" alt="Recipe 3">
             <div class="card-body">
-              <h5 class="card-title">Fresh Salad</h5>
-              <p class="card-text">A refreshing salad with a variety of fresh ingredients.</p>
-              <a href="#" class="btn btn-primary">View Recipe</a>
+              <h5 class="card-title">Egg Manchurian</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis sed
+                voluptatibus reiciendis dignissimos repellendus rerum veniam suscipit magni est nihil aut quis, nemo
+                dolorem quos aperiam, explicabo ipsam voluptatem.
+              </p>
+              <a href="description.html?id=2" class="btn btn-primary">View Recipe</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Review Load -->
+  <div class="review-container p-5 mt-5 w-75 m-auto">
+    <h1 class="title text-center">Clients Review about us</h1>
+    <div class="reviews">
+      <div
+        class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible"
+      >
+        <ul id="review-container" class="slider-container py-4"></ul>
+        <button
+          type="button"
+          class="slider-nav"
+          aria-label="Go left"
+        ></button>
+        <button
+          type="button"
+          class="slider-nav slider-nav-next"
+          aria-label="Go left"
+        ></button>
 
+        <div class="slider-indicators">
+          <button class="active" aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide" class=""></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- footer -->
   <footer class="footer bg-dark text-white">
@@ -185,7 +221,7 @@
       </div>
     </div>
   </footer>
-  
+
 
   <!-- end footer -->
 
@@ -198,6 +234,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./main_app.js"></script>
   <script src="./auth.js"></script>
+  <script src="./search.js"></script>
+  <script src="./search.js"></script>
+  <script src="./home.js"></script>
 </body>
 
 </html>

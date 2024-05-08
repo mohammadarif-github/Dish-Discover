@@ -16,7 +16,6 @@ const getparams = () => {
         });
 };
 getparams();
-
 const show_recipe = (recipe) => {
     document.getElementById("recipeImage").src = recipe.image;
     document.getElementById("recipeName").innerText = recipe.name;

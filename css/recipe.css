@@ -8,6 +8,7 @@ body {
     backdrop-filter: blur(10px);
     /* Add a blur effect for better readability */
 }
+
 .navbar-brand,
 .navbar-nav .nav-link {
     color: black;
@@ -16,6 +17,7 @@ body {
     font-weight: bold;
     /* Set text color to white or any other color for better visibility */
 }
+
 .navbar-nav .nav-link {
     color: black;
     /* Text color */
@@ -43,18 +45,25 @@ body {
 }
 
 .btn-search {
-    color: black; /* Text color */
-    background-color: #ffc107; /* Background color */
+    color: black;
+    /* Text color */
+    background-color: #ffc107;
+    /* Background color */
     font-size: 16px;
-    border-color: #ffc107; /* Border color */
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+    border-color: #ffc107;
+    /* Border color */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    /* Add transition for smooth color change */
 }
 
 /* Custom search button hover style */
 .btn-search:hover {
-    color: white; /* Hover text color */
-    background-color: #333; /* Hover background color */
-    border-color: #333; /* Hover border color */
+    color: white;
+    /* Hover text color */
+    background-color: #333;
+    /* Hover background color */
+    border-color: #333;
+    /* Hover border color */
 }
 
 
@@ -62,7 +71,8 @@ body {
     padding-top: 60px;
     padding-bottom: 10px;
     position: relative;
-    height: 300px; /* Adjusted height to match the image height */
+    height: 300px;
+    /* Adjusted height to match the image height */
 }
 
 .banner-image {
@@ -70,7 +80,8 @@ body {
     width: 80%;
     height: 100%;
     margin: auto;
-    overflow: hidden; /* Ensure the text doesn't overflow */
+    overflow: hidden;
+    /* Ensure the text doesn't overflow */
     border-radius: 50px;
 }
 
@@ -79,7 +90,8 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 50px; /* Matched border-radius with the parent */
+    border-radius: 50px;
+    /* Matched border-radius with the parent */
 }
 
 .banner-text {
@@ -90,14 +102,15 @@ body {
     text-align: center;
     color: black;
     /* text-decoration: dotted; */
-    z-index: 2; /* Ensuring the text appears above the image */
+    z-index: 2;
+    /* Ensuring the text appears above the image */
 }
 
 .banner-text h2 {
     margin-bottom: 10px;
 }
 
-#ftr{
+#ftr {
     padding: 30px;
     margin-top: auto;
 }
@@ -118,6 +131,17 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#gallery{
+#gallery {
     padding-top: 50px;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-icon {
+    font-size: 30px;
+    color: #007bff;
+    padding-left: 10px;
+    /* Change the color as desired */
 }

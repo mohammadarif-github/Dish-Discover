@@ -29,12 +29,10 @@ const handleRegistration = (event) => {
       })
         .then((res) => res.json())
         .then((data) => console.log(data));
+        window.location.href = "index.html";
 
       document.getElementById("success").innerText = "Sign up successful!";
 
-      setTimeout(() => {
-        window.location.href = "login.html";
-      }, 1500); // Redirect to login page after 2 seconds
     } else {
       document.getElementById("error").innerText =
         "Password must contain eight characters, at least one letter, one number and one special character";
@@ -66,9 +64,7 @@ const handleLogin = (event) => {
           localStorage.setItem("user_id", data.user_id);
           localStorage.setItem("authenticated", "true");
           document.getElementById("success").innerText = "Login Successfull !";
-          setTimeout(() => {
-            window.location.href = "index.html";
-          }, 1500);
+          window.location.href = "index.html";
         }
       })
       .catch((error) => {
@@ -112,12 +108,20 @@ const isAuthenticated = () => {
 };
 
 const updateNavbar = () => {
+  const user_id = localStorage.getItem("user_id");
   const authButtons = document.getElementById("auth-buttons");
   if (isAuthenticated()) {
     // If authenticated, show the logout button
     authButtons.innerHTML = `
           <li class="nav-item">
               <a class="nav-link" href="#" onclick="handleLogout()">Logout</a>
+          </li>
+          <li class ="nav-item">
+          <a href="profile.html?id=${user_id}" class="profile-link">
+            <div class="profile-icon">
+            <i class="fas fa-user-circle"></i>
+            </div>
+          </a>
           </li>
       `;
   } else {
